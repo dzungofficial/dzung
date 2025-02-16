@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal: Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8caa347d5e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/logo.png" class="logo" alt="Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#service">SERVICE</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>  
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Derick</span><br> mushi<br> from kigamboni</h1>
+        </div>
+    </div>
+</div>
+<!-- -------------------about------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/2 (2).jpg" alt="About Me Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub.title">About Me</h1>
+                <p>I am a passionate and driven individual with a strong interest in designing& technology. I thrive on challenges and enjoy finding creative solutions to problems. With a background in professional experience, I bring a unique perspective and a dedication to continuous learning and growth.
+
+                    In my free time, I love  Exploring the outdoors, reading, coding, or traveling, which keeps me inspired and balanced. I value collaboration, innovation, and making a positive impact in everything I do.
+                    
+                    I’m always eager to connect with like-minded individuals and explore new opportunities to expand my horizons. Let’s create something amazing together!
+                    
+                </p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>designing Web/app interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021-current</span><br>UI/UX Design Training at DIT</li>
+                        <li><span>2019-2020</span><br>Study ordinal-level</li>
+                        <li><span>2011-2018</span><br>Study primary-level</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2024</span><br>designing Training at home</li>
+                        <li><span>2024</span><br>study Web Development</li>
+                        <li><span>2024</span><br>Web developer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------service------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Designer</h2>
+                <p>I create visually stunning websites that are user-friendly and responsive on all devices. From custom designs to branding, I help businesses stand out online.</p> 
+                <a href="#">Learn more</a>                    
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Designer</h2>
+                <p>I create visually stunning websites that are user-friendly and responsive on all devices. From custom designs to branding, I help businesses stand out online.</p> 
+                <a href="#">Learn more</a>                    
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Designer</h2>
+                <p>I create visually stunning websites that are user-friendly and responsive on all devices. From custom designs to branding, I help businesses stand out online.</p> 
+                <a href="#">Learn more</a>                    
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------------portfolio------------------- -->
+
+<div id="portfolio">
+ <div class="container">
+     <h1 class="sub-title">My Work</h1>
+     <div class="work-list">
+         <div class="work">
+             <img src="image/4.jpg" alt="Social Media App">
+             <div class="layer">
+                 <h3>social Media App</h3>
+                 <p>the app connets you to the talented people around the world.
+                    dowwnload the app and start sharing your talent with the world.</p>
+                  <a href="#" title="Open Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+             </div>
+         </div>
+         <div class="work">
+            <img src="image/2 (2).jpg" alt="Music App">
+            <div class="layer">
+                <h3>Music App</h3>
+                <p>the app connets you to the talented people around the world.
+                   dowwnload the app and start sharing your talent with the world.</p>
+                 <a href="#" title="Open Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="image/1.jpg" alt="Online Shopping App">
+            <div class="layer">
+                <h3>Online Shopping  App</h3>
+                <p>the app connets you to the talented people around the world.
+                   dowwnload the app and start sharing your talent with the world.</p>
+                 <a href="#" title="Open Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>     
+     </div>
+ </div>
+</div>
+
+<!-- -------------------contact------------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact me</h1>
+                <p>Feel free to reach out to me. I'm always here to help.</p>
+                <a href="#"><i class="fa-solid fa-map-marker-alt"></i> 256, Kigamboni road, Dar-es-salaam</a>
+                <a href="#"><i class="fa-solid fa-phone"></i> +255 745 199 576</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>  derickmushi80@gmail.com</a>
+                <div class="social-icon">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <a href="comp 1.docx" download="" class="btn">Download </a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <h2>Get in touch</h2>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright Dzung. Made with<i class="fa-solid fa-heart-pulse"></i> by My self Derick</p>
+    </div>
+ </div>
+
+
+
+
+<script>
+
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabName){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link");
+        }
+    
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzlP_hEJ2ub-qX3tEtdWhsOSxyN_LwqcrGlv0LY4EVzi6ngH4C47Z3sEYiKKwGewnK7Zg/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
